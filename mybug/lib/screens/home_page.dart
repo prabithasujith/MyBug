@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mybug/activity_accepted.dart';
-import 'package:mybug/idea_model.dart';
-import 'package:mybug/widgets/curvePainter.dart';
+import 'package:mybug/screens/activity_accepted.dart';
+import 'package:mybug/models/idea_model.dart';
 
 class MyHomePage extends StatefulWidget {
   static const String route = '/route';
@@ -44,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     _activity = IdeasModel.generateQuestion(questionNumber);
 
     _controller = AnimationController(
-        vsync: this, duration: Duration(seconds: 2), upperBound: 100);
+        vsync: this, duration: Duration(seconds: 1), upperBound: 100);
 
     _iconController = AnimationController(
       vsync: this,
@@ -77,7 +76,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           decoration: BoxDecoration(color: _activity.color),
           child: Column(
             children: <Widget>[
-              
               Stack(
                 children: <Widget>[
                   Row(
@@ -116,9 +114,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                             child: _animate
                                 ? Text('')
                                 : Text(
-                                   
-                                        _activity.activitySuggestion 
-                                        ,
+                                    _activity.activitySuggestion,
                                     textAlign: TextAlign.center,
                                     overflow: TextOverflow.fade,
                                     style: Theme.of(context).textTheme.caption,

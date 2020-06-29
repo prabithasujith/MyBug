@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mybug/home_page.dart';
-import 'package:mybug/idea_model.dart';
+import 'package:mybug/screens/home_page.dart';
+import 'package:mybug/models/idea_model.dart';
 import 'package:mybug/widgets/curvePainter.dart';
 
 class MoodSelection extends StatefulWidget {

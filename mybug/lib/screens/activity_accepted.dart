@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mybug/idea_model.dart';
+import 'package:mybug/models/idea_model.dart';
 
 class ActivityAccepted extends StatefulWidget {
   static const String route = '/activityAccepted';

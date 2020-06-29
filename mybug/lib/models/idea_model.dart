@@ -45,13 +45,13 @@ class IdeasModel {
 
   static List<String> userEmotionsList = [];
   static var colors = [
-    Color(0xFFACECD5),
-    Color(0xFFFFF9AA),
-    Color(0xFFFFD5E8),
+    Color(0xFF11CE8A),
+    Color(0xFF537AD9),
+    Color(0xFF0198CF),
     Color(0xFF9A91AC),
-    Color(0xFFBCC7EE),
+    Color(0xFFCD5D5D),
     Color(0xFFAFD5AA),
-    Color(0xFFAFD5AA),
+    Color(0xFFE3A855),
   ];
   static var myMood = [
     'Happy',

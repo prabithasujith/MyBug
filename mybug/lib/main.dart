@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mybug/activity_accepted.dart';
-import 'package:mybug/home_page_scale.dart';
-import 'package:mybug/mood_selection.dart';
+import 'package:mybug/screens/activity_accepted.dart';
+import 'package:mybug/screens/home_page_scale.dart';
+import 'package:mybug/screens/mood_selection.dart';
 
-import 'home_page.dart';
+import 'screens/home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +20,10 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.w300,
                   fontStyle: FontStyle.italic,
                   wordSpacing: 0.5,
-                  fontSize: 30))),
+                  fontSize: 30),
+                  
+                  button: TextStyle(color: Colors.white, fontSize: 15,fontWeight: FontWeight.w500)
+                  )),
       routes: {
         ActivityAccepted.route: (ctx) {
           return ActivityAccepted();
