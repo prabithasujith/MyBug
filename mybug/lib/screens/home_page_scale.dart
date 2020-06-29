@@ -33,10 +33,30 @@ class _HomePageScaleState extends State<HomePageScale> {
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
+                        _isFirstQuestion
+                      ? SizedBox()
+                      : Align(
+                        alignment: Alignment.topLeft,
+                                              child: MaterialButton(
+                           height: 20,
+                            onPressed: () {
+                              _isFirstQuestion = true;
+                              setState(() {});
+                            },
+                            splashColor: Colors.white,
+                            // child: Text('Back',
+                            //     style: Theme.of(context).textTheme.display1)
+
+                            child: Icon(Icons.arrow_back,color: Colors.white,size: 40,),
+                                
+                                ),
+                      ),
                       Column(
                         children: <Widget>[
+                         
+                  
                           Container(
                               alignment: Alignment.center,
                               margin: EdgeInsets.fromLTRB(0.0, 10, 0.0, 10.0),
@@ -106,20 +126,7 @@ class _HomePageScaleState extends State<HomePageScale> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
-                  _isFirstQuestion
-                      ? SizedBox()
-                      : MaterialButton(
-                          color: Colors.white12,
-                          onPressed: () {
-                            _isFirstQuestion = true;
-                            setState(() {});
-                          },
-                          splashColor: Colors.white,
-                          child: Text('Previous',
-                              style: Theme.of(context).textTheme.button)),
-                  SizedBox(
-                    width: 10,
-                  ),
+                
                   MaterialButton(
                       color: Colors.white12,
                       onPressed: () {

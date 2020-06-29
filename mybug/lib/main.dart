@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       home: HomePageScale(),
       theme: ThemeData(
           textTheme: TextTheme(
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
                   wordSpacing: 0.5,
                   fontSize: 30),
                   
-                  button: TextStyle(color: Colors.white, fontSize: 15,fontWeight: FontWeight.w500)
+                  button: TextStyle(color: Colors.white, fontSize: 15,fontWeight: FontWeight.w500),
+                   display1: TextStyle(color: Colors.white, fontSize: 15,fontWeight: FontWeight.w100)
                   )),
       routes: {
         ActivityAccepted.route: (ctx) {

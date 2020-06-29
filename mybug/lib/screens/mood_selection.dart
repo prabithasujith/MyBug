@@ -109,7 +109,7 @@ class _MoodSelectionState extends State<MoodSelection> {
               MaterialButton(
                 color: Colors.redAccent,
                 child: Text(
-                  'Lets Go',
+                  'Suggest',
                   style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
                 onPressed: () {

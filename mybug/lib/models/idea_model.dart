@@ -98,7 +98,7 @@ class IdeasModel {
         imageUrl: 'images/paint.png'),
     Activity(
         color: colors[5],
-        activitySuggestion: 'party',
+        activitySuggestion: 'Party',
         icon: Icons.party_mode,
         curves: Curves.ease,
         imageUrl: 'images/paint.png'),
@@ -140,7 +140,7 @@ class IdeasModel {
         imageUrl: 'images/exercise.png'),
     Activity(
         color: colors[5],
-        activitySuggestion: 'Going on a Drive',
+        activitySuggestion: 'Go for a Drive',
         icon: Icons.drive_eta,
         curves: Curves.ease,
         imageUrl: 'images/exercise.png'),
@@ -170,7 +170,7 @@ class IdeasModel {
         imageUrl: 'images/paint.png'),
     Activity(
         color: colors[4],
-        activitySuggestion: 'Watering plants',
+        activitySuggestion: 'Water your plants',
         icon: Icons.nature_people,
         curves: Curves.easeInBack,
         imageUrl: 'images/growth.png'),
@@ -182,7 +182,7 @@ class IdeasModel {
         imageUrl: 'images/cake.png'),
     Activity(
         color: colors[6],
-        activitySuggestion: 'doing a self care',
+        activitySuggestion: 'Do a self care',
         icon: Icons.face,
         curves: Curves.easeInExpo,
         imageUrl: 'images/cosmetics.png'),
